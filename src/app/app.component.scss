@@ -9,20 +9,33 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-  }
-  a {
-    color: white;
-    text-decoration: none;
-    margin: 0 1rem;
-    padding: 1rem;
-  }
-  a:hover {
-    background-color: #1affa1;
-    color: black;
-  }
-  a:active{
-    background-color: #1affa1;
-    color: black;
-    
+    ul {
+      display: flex;
+      list-style: none;
+      li {
+        margin-right: 3em;
+        a {
+          text-decoration: none;
+          color: #000;
+          cursor: pointer;
+          background-color: #fa1;
+          padding: 1rem 2rem;
+          border-radius: 5px;
+        }
+        a:hover {
+          background-color: #fb0;
+          color: #000;
+          transition: all 0.3s ease-in-out;
+        }
+        .active {
+          background-color: #1dddda;
+          color: #000;
+        }
+        .active:hover {
+          background-color: #1dddda;
+          color: #000;
+        }
+      }
+    }
   }
 }
