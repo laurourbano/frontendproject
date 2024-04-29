@@ -1,40 +1,93 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 100dvh;
+}
+#logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+  gap: 10px;
+  img {
+    width: 60px;
+  }
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background-color: #333;
-  color: white;
-  nav {
+  padding: 20px 0;
+  height: 10dvh;
+
+  h1 {
+    cursor: pointer;
+  }
+  ul {
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    ul {
-      display: flex;
-      list-style: none;
-      li {
-        margin-right: 3em;
-        a {
-          text-decoration: none;
-          color: #000;
-          cursor: pointer;
-          background-color: #fa1;
-          padding: 1rem 2rem;
-          border-radius: 5px;
-        }
-        a:hover {
-          background-color: #fb0;
-          color: #000;
-          transition: all 0.3s ease-in-out;
-        }
-        .active {
-          background-color: #1dddda;
-          color: #000;
-        }
-        .active:hover {
-          background-color: #1dddda;
-          color: #000;
-        }
+  }
+  li {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  a:hover {
+    color: blue;
+  }
+  a:active {
+    position: relative;
+    top: 2px;
+    transition: all 0.3s;
+  }
+  .active {
+    text-decoration: underline;
+    animation-duration: 3ms;
+    color: deeppink;
+  }
+  .active:hover {
+    color: deeppink;
+  }
+}
+
+main {
+  height: 70dvh;
+  padding-top: 10px;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20dvh;
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    li {
+      list-style-type: none;
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      a:hover {
+        color: blue;
+      }
+      .active {
+        text-decoration: underline;
+        animation-duration: 3ms;
+        color: deeppink;
+      }
+      .active:hover {
+        color: deeppink;
       }
     }
   }

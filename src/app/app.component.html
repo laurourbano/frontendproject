@@ -1,10 +1,104 @@
-<header>
-  <h1>{{ title }}</h1>
-<nav>
-  <ul>
-    <li><a routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">HOME</a></li>
-    <li><a routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">ABOUT</a></li>
-    <li><a routerLink="/contact" routerLinkActive="active" ariaCurrentWhenActive="page">CONTACT</a></li>
-  </ul>
-</nav></header>
-<router-outlet />
+<div class="container">
+  <header>
+    <h1 id="logo" routerLink="/home">
+      <img src="../assets/logo.png" alt="logo" />
+      DevUrbano
+    </h1>
+    <nav aria-label="Navigation" aria-labelledby="some-element-id">
+      <ul>
+        <li>
+          <a
+            routerLink="/home"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page"
+            >HOME</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="/about"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page"
+            >ABOUT</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="/contact"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page"
+            >CONTACT</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="/my-work"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page"
+            >MY WORK</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <router-outlet />
+  </main>
+  <footer>
+    <nav aria-label="Navigation" aria-labelledby="some-element-id">
+      <ul>
+        <li>
+          <a
+            routerLink="/home"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page"
+            >HOME</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="/about"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page"
+            >ABOUT</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="/contact"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page"
+            >CONTACT</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="/my-work"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page"
+            >MY WORK</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="redes">
+      <p>&copy; 2024</p>
+      <a
+        href="https://linkedin.com/in/laurourbano"
+        target="_blank"
+        rel="noopener noreferrer"
+        >LinkedIn</a
+      >
+      <a
+        href="https://github.com/laurourbano"
+        target="_blank"
+        rel="noopener noreferrer"
+        >github</a
+      >
+    </div>
+    <h2 id="logo" routerLink="/home">
+      <img src="../assets/logo.png" alt="logo" />
+      DevUrbano
+    </h2>
+  </footer>
+</div>
